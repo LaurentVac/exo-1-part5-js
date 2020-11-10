@@ -7,16 +7,16 @@
 </head>
 <body>
     <form>
-        <p>
-            <label for="mdp1">Saisissez le mot de passe</label> :
-            <input type="password" name="mdp1" id="mdp" >
-        </p>
-        <p>
+        
+            <label for="mdp">Saisissez le mot de passe</label> :
+            <input  type="password" name="mdp1" id="mdp"  required >
+      
+     
             <label for="mdp2">Confirmez le mot de passe</label> :
-            <input type="password" name="mdp2" id="validation" >
-        </p>
+            <input type="password" name="mdp2" id="validation" required >
+       <!--type button au lieu de submit car pas d'information a envoyer -->
 
-        <input type="submit" value="Envoyer" id="button">
+        <input onclick="button()" type="button" value="Envoyer">
     </form>
 
     

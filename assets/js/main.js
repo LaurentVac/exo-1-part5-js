@@ -1,20 +1,18 @@
-let button = document.getElementById("button");
-button.onclick = function(v) {
-    v.preventDefault();
-    // 
-    let mdp = document.getElementById("mdp").value;
-    let confirmation = document.getElementById("validation").value;
-    if (mdp == confirmation) {
-        document.getElementById("mdp").style.borderColor = "green";
-      document.getElementById("validation").style.borderColor = "green";
-    } else {
-        document.getElementById("mdp").style.borderColor = "red";
-        document.getElementById("validation").style.borderColor = "red";
-
-    }
-
-
-
-
-
+// creation fonction du bouton pour validation
+function button(){
+    // creation variable pour y inclure mon id
+let mdp = document.getElementById("mdp");
+let validation = document.getElementById("validation");
+// si mdp est identique a validation il entoure les bordures en vert sinon en rouge
+if(mdp.value == validation.value){
+    mdp.style.borderColor= "green";
+    validation.style.borderColor= "green";
+}else{
+    mdp.style.borderColor= "red";
+    validation.style.borderColor= "red";
+  }
 }
+
+    
+
+
